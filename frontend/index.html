@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="counter.css" />
 </head>
 
 <body>
+    <div class="header">
+        <h1>I am webComponent build using pure vanila js</h1>
+    </div>
     <my-counter id="counter" count="10"></my-counter>
     <br></br>
-    <button onClick="update()">click me </button>
+    <button onClick="update()" class="btnPrimary">Click Me</button>
     <script src="./counter.js"></script>
     <script>
         function update() {

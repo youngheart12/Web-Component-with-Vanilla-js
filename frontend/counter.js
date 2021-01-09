@@ -20,6 +20,7 @@ class Counter extends HTMLElement {
     if (prop === "count") {
       this.render();
       let btn = this.shadow.querySelector('#btn');
+      btn.classList="btnPrimary"
     btn.addEventListener('click',this.inc.bind(this))
     }
   }
@@ -36,9 +37,11 @@ class Counter extends HTMLElement {
 
   render() {
     this.shadow.innerHTML = `
-        <h1>Counter</h1>
+    <div>
+        <div><h1>Counter</h1></div>
         ${this.count}
         <button id="btn">Increment</button>
+        </div>
         `;
   }
 }
